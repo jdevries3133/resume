@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,5 +13,6 @@
     {% include 'navbar.html' %}
     {% block content %}
     {% endblock %}
+    <script src="{% static 'background_helper.js' %}"></script>
   </body>
 </html>

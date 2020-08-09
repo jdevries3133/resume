@@ -10,4 +10,4 @@ function positionSurprise() {
 }
 
 positionSurprise();
-window.onresize = positionSurprise;
+window.addEventListener("resize", positionSurprise);
