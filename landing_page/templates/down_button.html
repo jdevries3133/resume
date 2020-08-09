@@ -1,4 +1,13 @@
-<div class="outer_container">
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'down_button.css' %}" />
+<script src="{% static 'down_button.js' %}"></script>
+
+{% comment %}
+The down arrow will automatically take up the space between it and the bottom of
+the viewport. If it is below the bottom of the viewport, it will try to get itself
+above the bottom of the viewport.
+{% endcomment %}
+<div id="arrow" class="outer_container">
     <div class="circle_container">
         <div class="outer_circle">
             <div class="inner_circle">

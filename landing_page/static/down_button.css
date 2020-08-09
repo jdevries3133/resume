@@ -1,0 +1,31 @@
+/* DOWN ARROW */
+.circle_container {
+  display: inline-block;
+}
+
+.outer_circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+
+.inner_circle {
+  height: 75px;
+  width: 75px;
+  border-radius: 100%;
+  background-color: var(--orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}

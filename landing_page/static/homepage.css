@@ -1,6 +1,13 @@
+.slide_container {
+  display: inline-block;
+  width: 99vw;
+  overflow-y: hidden;
+}
+
 .surprise {
   position: absolute;
   color: var(--grey);
+  border: 1px solid var(--black);
   opacity: 0;
   transition: background-color 0.5s;
   transition: opacity 0.5s;
@@ -28,49 +35,22 @@
 }
 
 .welcome {
+  border: 2px solid var(--black);
   transition: transform 1s;
   animation: surprise_cta 1s ease-in-out infinite alternate;
 }
 
 @keyframes surprise_cta {
   from {
+    border-color: var(--black);
     opacity: 100%;
   }
   to {
+    border-color: #00000000;
     opacity: 70%;
   }
 }
 
 .h1_focus {
   color: var(--blue);
-}
-
-/* DOWN ARROW */
-
-.circle_container {
-  display: inline-block;
-}
-
-.outer_circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--black);
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
-}
-
-.inner_circle {
-  height: 75px;
-  width: 75px;
-  border-radius: 100%;
-  background-color: var(--orange);
-}
-
-.arrow {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
-  margin: 0;
-  padding: 0;
 }
