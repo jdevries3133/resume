@@ -1,0 +1,46 @@
+.surprise {
+  position: absolute;
+  color: var(--grey);
+  opacity: 0;
+  transition: background-color 0.5s;
+  transition: opacity 0.5s;
+  border-radius: 10px;
+  width: 191px;
+  height: 121px;
+  text-align: center;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.surprise_container {
+  display: inline-block;
+}
+
+.surprise_container:hover .surprise {
+  opacity: 100;
+  background-color: var(--blue);
+}
+
+.surprise_container:hover .welcome {
+  transform: translatex(200px);
+}
+
+.welcome {
+  transition: transform 1s;
+  animation: surprise_cta 1s ease-in-out infinite alternate;
+}
+
+@keyframes surprise_cta {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 70%;
+  }
+}
+
+.h1_focus {
+  color: var(--blue);
+}
