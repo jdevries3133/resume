@@ -17,7 +17,7 @@
 </div>
 <br />
 <div class="outer_container">
-  <div class="text_container" style="max-width: 600px;">
+  <div class="text_container">
     <h1 class="h1_focus">Jack DeVries</h1>
     <h2>Ambitious Full Stack Web Developer</h2>
     <p>
@@ -33,7 +33,23 @@
       Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
     </p>
   </div>
+
+  {% include 'down_button.html' %}
+  <div id="cta0">
+  {% comment %} Good place for fancy css animation thing  {% endcomment %}
+    <h1>Placeholder: down button</h1>
+  </div>
+
+  <div class="text_container">
+    <h1>My Skills</h1>
+      <ul>
+        <li>Python</li>
+        <li>Django</li>
+        <li>Bash</li>
+        <li>HTML / CSS / Javascript</li>
+        <li>React JS</li>
+      </ul>
 </div>
 
-<script src="{% static 'animation_helper.js' %}"></script>
+<script src="{% static 'homepage.js' %}"></script>
 {% endblock %}

@@ -1,4 +1,6 @@
 function positionSurprise() {
+  // ISSUE: this only works if the browser is scrolled to the top.
+  //        refreshing from the middle of the page does not work
   const TOP_OFFSET = 41;
   const LEFT_OFFSET = 19;
   const welcome = document.getElementById("welcome");
