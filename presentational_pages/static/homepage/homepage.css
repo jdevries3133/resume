@@ -1,6 +1,6 @@
 .slide_container {
   display: inline-block;
-  width: 99vw;
+  width: 100%;
   overflow-y: hidden;
 }
 
@@ -53,4 +53,24 @@
 
 .h1_focus {
   color: var(--blue);
+}
+
+table {
+  display: inline-block;
+}
+
+.td_title {
+  width: 25%;
+}
+
+tr:nth-child(2n) {
+  background-color: rgb(179, 179, 179);
+}
+
+#skills_table {
+  border-collapse: collapse;
+}
+
+#skills_table td {
+  border: 0px;
 }

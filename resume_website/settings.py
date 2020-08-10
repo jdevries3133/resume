@@ -38,8 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'landing_page',
-    'portfolio',
+    'presentational_pages',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +58,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'resume_website', 'templates'),
-            os.path.join(BASE_DIR, 'landing_page', 'templates'),
+            os.path.join(BASE_DIR, 'presentational_pages', 'templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
