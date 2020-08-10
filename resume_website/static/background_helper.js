@@ -1,5 +1,5 @@
-// Adds a filler div at the bottom to make the gradient background take up the
-// whole viewport
+// sets the height of the body to match the viewport if the body is smaller than
+// the viewport, so that the gradient stays inside.
 
 const document_height = () => {
   const body = document.body,

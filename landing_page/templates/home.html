@@ -22,33 +22,57 @@
   <div class="text_container">
     <h1 class="h1_focus">Jack DeVries</h1>
     <h2>Ambitious Full Stack Web Developer</h2>
-    <p>
+    <p id="personal_statement">
       Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
       ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
       tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean 
       ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et
       sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo 
-      vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, 
-      eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in 
-      turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, 
-      tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. 
-      Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+      vitae, ornare sit amet, wisi. 
     </p>
   </div>
 
   {% include 'down_button.html' %}
 
-  <div class="text_container">
+  <div id="skills" class="text_container">
     <h1>My Skills</h1>
-      <ul>
-        <li>Python</li>
-        <li>Django</li>
-        <li>Bash</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript</li>
-        <li>React JS</li>
-      </ul>
+    <table>
+      <tbody>
+        <tr>
+          <td class="td_title">Programming Languages</td>
+          <td class="td_items">
+            <p>Python</p>
+            <p>Javascript</p>
+            <p>Bash</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="td_title">Frontend</td>
+          <td class="td_items">
+            <p>HTML</p>
+            <p>CSS</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="td_title">Javascript Libraries</td>
+          <td class="td_items">
+            <p>React JS</p>
+            <p>Styled-Components</p>
+            <p>Redux</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="td_title">Django</td>
+          <td class="td_items">
+            <p>Django ORM</p>
+            <p>Rest Framework</p>
+            <p>Django-Rest-Knox</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+            
+
 </div>
 
 <script src="{% static 'homepage.js' %}"></script>
