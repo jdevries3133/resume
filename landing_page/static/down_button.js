@@ -27,7 +27,7 @@ const space_arrow = (el) => {
     return;
   }
   const padding = Math.floor(needs_filler / 2);
-  el.setAttribute("style", `padding: ${padding}px 0px`);
+  el.setAttribute("style", `margin: ${padding}px 0px`);
 };
 
 const el = find_element("arrow");
