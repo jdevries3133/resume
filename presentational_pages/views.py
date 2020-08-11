@@ -6,3 +6,6 @@ def home(request):
 
 def portfolio(request):
     return render(request, 'portfolio/portfolio.html')
+
+def resume(request):
+    return render(request, 'resume/resume.html')

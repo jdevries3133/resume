@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: "Arimo", sans-serif;
+  line-height: 27px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
@@ -32,6 +33,18 @@ ul {
   padding: 0;
 }
 
+a {
+  color: #ee8e45;
+}
+
+a:visited {
+  color: black;
+}
+
+p {
+  margin-bottom: 27px;
+}
+
 .outer_container {
   width: 100%;
   text-align: center;
@@ -45,14 +58,7 @@ ul {
   width: 80%;
   padding: 20px;
   max-width: 600px;
-}
-
-a {
-  color: #ee8e45;
-}
-
-a:visited {
-  color: black;
+  margin-bottom: 27px;
 }
 
 /* NAVBAR */
