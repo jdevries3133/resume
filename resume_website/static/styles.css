@@ -47,6 +47,14 @@ ul {
   max-width: 600px;
 }
 
+a {
+  color: #ee8e45;
+}
+
+a:visited {
+  color: black;
+}
+
 /* NAVBAR */
 .navbar {
   display: inline-block;

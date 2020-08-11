@@ -1,19 +1,5 @@
 // apply padding above and below the down button to fill the page.
 
-async function find_element(id) {
-  let el = document.getElementById(id);
-  if (el) {
-    return el;
-  } else {
-    await new Promise((r) => setInterval(r, 10));
-    el = document.getElementById(id);
-    if (!el) {
-      throw "Element " + el + " not found";
-    }
-    return el;
-  }
-}
-
 const space_arrow = (el) => {
   if (window.innerWidth < 400) {
     return;
@@ -30,5 +16,9 @@ const space_arrow = (el) => {
   el.setAttribute("style", `margin: ${padding}px 0px`);
 };
 
-const el = find_element("arrow");
-el.then((r) => space_arrow(r));
+document.addEventListener("readystatechange", () => {
+  if (document.readyState === "complete") {
+    const el = document.getElementById("arrow");
+    space_arrow(el);
+  }
+});

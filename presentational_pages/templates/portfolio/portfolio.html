@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block stylesheet %}
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio/style.css'%}" />
+{% endblock %}
+
+{% block content %}
+
+<div class="outer_container">
+    <div class="text_container project_description">
+        <h1>Portfolio</h1>
+        <h2>Song Maker Gallery</h2>
+        <a href="https://songmakergallery.com/gallery/sample-gallery">
+            <img width="600px" src="{% static 'portfolio/images/Song_Maker_Gallery.png' %}" />
+        </a>
+        <p>
+            The song maker gallery is a website that I made for music teachers
+            in response to the coronavirus pandemic. It allows teachers to easily
+            create a unique display to present student compositions from the
+            <a href="https://musiclab.chromeexperiments.com/">Chrome Music Lab.</a>
+        </p>
+        <p>
+            The backend is built with Django and the Django-Rest-Framework. The frontend
+            is built with React JS. The use of React allowed me to make a responsive
+            and easy-to-use form where teachers can upload .CSV data in order to
+            create their galleries. Django facilitated the fast production of a secure backend;
+            including the use of Django-Knox which extends the built in Django user
+            model to JSON-web-token authentication use cases; such as in my REST API
+            & single page application architecture.
+        </p>
+        <a href="https://songmakergallery.com/teacher?demo=true">
+            <img
+                src="{% static 'portfolio/images/gallery_management_console.png' %}"
+                width="400px" 
+                align="left"
+                style="margin-right: 15px;" />
+        </a>
+        <p>
+            One of the greatest challenges I faced in this project was that
+            the site had to capture and store thumbnails of students' work. I
+            decided that this would best be accomplished through a microservice
+            architecture, by separating the screenshoting mechanism from the
+            client-serving backend. I was able to capture the screenshots
+            using selenium, and to crop and compress the images using the Python Pillow module.
+            I then stored the images in an S3 bucket. Once the "Screenshot Bot"
+            captured and uploaded the screenshots to S3, it sent a patch request
+            back to the client-facing server where the gallery model was updated
+            with thumbnails that provided users with an accurate preview of student work.
+        </p>
+
+        <h2>This Website 😊</h2>
+        <p>
+            Having started my front end journey with React JS, this website demonstrates
+            my skills in "vanilla" HTML, CSS, and Javascript. The ability to build a web
+            page with these classic web technologies is absolutely critical for  fast page loading timee, search
+            engine optimization, and a good user experience; I hope that this site, which I wrote from scratch,
+            demonstrates basic competency in these technologies.
+        </p>
+
+{% endblock %}
